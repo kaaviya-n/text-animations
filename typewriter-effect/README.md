@@ -14,10 +14,12 @@ Ideal for personal websites, landing pages, or portfolio intros.
 
 ## 📁 Folder Structure
 
+```bash
 typewriter-animation/
 ├── index.html # Main HTML structure
 ├── style.css # Typewriter styles & animation
 └── script.js # Typewriter logic (typing/deleting)
+```
 
 ---
 
