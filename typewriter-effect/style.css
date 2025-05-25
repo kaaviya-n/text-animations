@@ -1,0 +1,30 @@
+body {
+  background: #191830;
+  height: 100vh;
+  color: #fbd002;
+  font-family: "Special Elite", system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewritter {
+  font-size: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
