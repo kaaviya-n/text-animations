@@ -1,0 +1,32 @@
+body {
+  background: #191830;
+  height: 100vh;
+  color: #fbd002;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.reveal-text {
+  display: flex; /* this makes the text vertical and transform into animated */
+  overflow: hidden; /* Without this the text overlaps */
+  padding-right: 100px;
+}
+
+.text-wrapper {
+  font-size: 60px;
+  animation: reveal 2s ease-in-out forwards;
+  text-transform: uppercase;
+  transform: translateY(-100px); /* This helps to start with the reveal, hides the text in the start */
+}
+
+@keyframes reveal {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
